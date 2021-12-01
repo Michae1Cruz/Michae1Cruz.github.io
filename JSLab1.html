@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- This is an example of an HTML file utilizing Internal JS -->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JS_Assign1-Mablibs</title>
+
+<style>
+  span{
+    color:red;
+  }
+  </style>
+</head>
+
+<body>
+	<h2>Demo JavaScript Innertext</h2>
+
+	<h3>Demo1</h3>
+	<p id="demo1">Hi  </p>
+
+	<h3>Demo2</h3>
+
+	<p id="demo2">Hi my name is </p>
+
+	<h3>Demo3</h3>
+
+	<p id="demo3">Heya! </p>
+<br><br><br><br><br>
+	<h3>MadLib - This the assignment</h3>
+
+<!-- Extend the Madlib so that it has at least 8 different words-->
+<p> Here's a madlib about a kid named <span id = "name1">____</span>  who had an imaginary friend <span id = "name2"> ____</span>. One day the two of them went up a hill and found a pot of <span id = "noun1"> _____ </span>. Next to it was a pile of <span id = "noun2">____</span>. The very next day they found a new friend named <span id = "name3">_____</span>. Together they both went to buy <span id = "noun3">_____</span>. The store was named after their favorite celebrity <span id = "name4">_____</span>. They went home and along the way saw that their house was filled with <span id = "noun4">_____</span>
+
+
+
+
+</p>
+
+	<script>  //The Javascript goes in this section below 
+    
+//demo 1 shows replacement of HTML text
+document.getElementById("demo1").innerHTML = "Hello World!";
+
+//demo 2 shows concatenation of HTML text
+document.getElementById("demo2").innerHTML += "dr og";
+
+//demo 3 shows a prompt which stores info as a variable
+//demo 3 shows a prompt which stores info as a variable
+
+var name = prompt("Please enter your name");
+
+document.getElementById("demo3").innerHTML = "Hello " + name + "! How are you today?";
+
+
+
+//Put the Madlib JS Code below here. Extend this code so that asks for 8 different inputs and prints them all out
+
+
+var name1 = prompt("Give me a name");
+var name2 = prompt("Give me another name");
+var noun1 = prompt("Give me an appropriate object");
+var noun2 = prompt("Give me another appropriate object");
+var name3 = prompt("give me another name");
+var noun3 = prompt("Give me another appropriate object");
+var name4 = prompt("Give me a celebrities' name");
+var noun4 = prompt("Give me an appropriate object");
+
+
+
+
+
+document.getElementById("name1").innerHTML = name1;
+document.getElementById("name2").innerHTML = name2;
+document.getElementById("noun1").innerHTML = noun1;
+document.getElementById("noun2").innerHTML = noun2;
+document.getElementById("name3").innerHTML = name3;
+document.getElementById("noun3").innerHTML = noun3;
+document.getElementById("name4").innerHTML = name4;
+document.getElementById("noun4").innerHTML = noun4;
+
+
+	</script>
+
+
+</body>
+
+</html>
